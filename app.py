@@ -26,7 +26,7 @@ except:
 # === UI ===
 st.set_page_config(page_title="Prediksi KNN", page_icon="🔮", layout="centered")
 st.title("🔮 Prediksi Profitabilitas Menu Restoran")
-st.markdown("Masukkan detail menu untuk memprediksi **profitabilitas** berdasarkan model KNN yang telah dilatih.")
+st.markdown("Masukkan detail infromasi untuk memprediksi **profitabilitas** menu.")
 
 with st.form("form_prediksi"):
     col1, col2 = st.columns(2)
@@ -64,4 +64,5 @@ if submitted:
         st.success(f"💡 Prediksi: **{hasil}**")
 
     except Exception as e:
+
         st.error(f"Terjadi kesalahan: {e}")
